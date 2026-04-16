@@ -26,9 +26,11 @@ grouped["UP"] = grouped["UP"].astype(float)
 grouped["DOWN"] = grouped["DOWN"].astype(float)
 
 # Classify succesful hedges against unsuccesful hedges
-TOL = 1e-2
-grouped["UP_complete"] = abs(grouped["UP"] - 5) < TOL
-grouped["DOWN_complete"] = abs(grouped["DOWN"] - 5) < TOL
+TOL = 2e-2
+diff = (grouped["UP"] - grouped["DOWN"]).abs()
+
+grouped["UP_complete"] = diff < TOL
+grouped["DOWN_complete"] = diff < TOL
 grouped["hedge_status"] = grouped.apply(
     lambda row: "SUCCESS" if (row["UP_complete"] and row["DOWN_complete"]) else "FAIL",
     axis=1
