@@ -14,7 +14,7 @@ As Polymarket doesn't have easy acces to API's I gave the bot a small amount of 
 From this we can see that the the success rate was not exceptentially high. For this strategy to work the Succesful hedges need to make up over 98%, whereas this is around 78%. However, the actual PnL of the bot was positive ~2 dollars over this time frame. Looking back at this I can see that some of the "Failed hedges" filled only the side that resolved to 1 dollar, resulting in $2.50 of profit. This shows the current reliability of the polymarket API as well as orderbook, especially in volatile conditions.
 
 ## Timings of failed trades
-![Performance Chart](Failed hedges vs time.png)
+![Performance Chart](hedgesVtime.png)
 
 From this graph we can see that there are certain spikes when multiple hedges failed. The most notable is on the 26th March. Looking at bitcoin's trend here, it can be seen that it dropped 3.5% that day, this means that often on polymarket, the down token would never trade below 50 cent and thus are orders wouldn't be filled. 
 
