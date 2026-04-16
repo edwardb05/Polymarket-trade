@@ -18,5 +18,5 @@ Unlike traditional financial markets, Polymarket trades continuously, so the bot
 
 ## Backtesting
 
-To test the strategy, I funded the bot with $25 and monitored just under 1,000 trades. The backtesting section goes into more detail on its performance, the issues encountered, and the improvements that could be made to the model.
+To test the strategy, I funded the bot with $25 and monitored just over 750 trades. The backtesting section goes into more detail on its performance, the issues encountered, and the improvements that could be made to the model.
 
