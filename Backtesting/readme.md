@@ -19,7 +19,7 @@ More broadly, the results reflect the limitations of the Polymarket API and orde
 
 ## Timings of Failed Trades
 
-![Performance Chart](hedgesVtime.png)
+![Performance Chart](hedgeVtime.png)
 
 The chart shows that failed hedges were not evenly distributed over time. Instead, they appeared in clusters, with the most notable spike occurring in the early hours of 24 March. Looking at Bitcoin's price action on that day, it rose by roughly 4.5%, which helps explain the behaviour: in strongly directional conditions, the `UP` token often never traded below $0.50, so both sides of the hedge could not be filled.
 
