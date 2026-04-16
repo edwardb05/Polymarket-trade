@@ -1,0 +1,6 @@
+python-dotenv
+requests
+pandas
+matplotlib
+py-clob-client
+polymarket-apis

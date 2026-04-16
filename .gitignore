@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+
+# Virtual environments
+poly/
+arb/
+.venv/
+venv/
+env/
+
+# OS/editor files
+.DS_Store
+__pycache__/
+*.pyc
