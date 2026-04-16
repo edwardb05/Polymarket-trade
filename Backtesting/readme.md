@@ -10,7 +10,7 @@ Because Polymarket does not provide especially convenient access for this workfl
 | Successful hedges | 370 |
 | Failed hedges | 121 |
 
-These results show that the hedge completion rate was not high enough for the strategy to be reliably scalable. For the model to work consistently, successful hedges would likely need to account for well over 98% of trades, whereas the observed rate here was closer to 78%. Despite that, the realised PnL over the period was still positive.
+These results show that the hedge completion rate was not high enough for the strategy to be reliably scalable. For the model to work consistently, successful hedges would need to account for over 98% of trades, whereas the observed rate here was closer to 78%. Despite that, the realised PnL over the period was still positive.
 
 To understand this outcome, I analysed the composition of “failed hedges” and found that a subset remained profitable. In these cases, only one leg of the hedge was filled, and that position happened to resolve to the correct side. This introduces an unintended directional exposure component, meaning the strategy is not purely market-neutral in practice.
 More broadly, the results reflect the limitations of the Polymarket API and order book during volatile periods. 
